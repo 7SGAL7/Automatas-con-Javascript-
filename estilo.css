@@ -4,6 +4,18 @@
     box-sizing: border-box;
     --tam: 100px;
     --tam-acept: 90px;
+    /* COLORES */
+    --blue_pine: #324851;
+    --new_grass: #86AC41;
+    --reflection: #34675C;
+    --mist: #7DA3A1;
+    --color: #6FB98F;
+}
+
+body {
+    background-color: var(--mist);
+    color: var(--color);
+    text-shadow: 1px 1px black;
 }
 
 .caja {
@@ -29,7 +41,7 @@ h1 {
 .elemento {
     width: var(--tam);
     height: var(--tam);
-    background-color: red;
+    background-color: var(--reflection);
     position: relative;
     top: 100px;
     z-index: 100;
@@ -53,7 +65,7 @@ h1 {
 }
 
 .nav {
-    background-color: blue;
+    background-color: var(--blue_pine);
     width: 100%;
 }
 
@@ -97,10 +109,6 @@ h1 {
 
 .abajo {
     transform: rotate(180deg);
-}
-
-.elemento:hover {
-    background-color: green;
 }
 
 .numero {
@@ -200,4 +208,27 @@ path {
     display: flex;
     width: 100%;
     justify-content: center;
+}
+
+.resultado {
+    opacity: 0;
+    position: absolute;
+    top: 125px;
+    left: 220px;
+    z-index: 120;
+    transition: all 2s;
+}
+
+.animar {
+    opacity: 1;
+    display: block;
+    transform: scale(3);
+}
+
+input[type=button] {
+    background-color: var(--reflection);
+    padding: 2px;
+    border: none;
+    color: var(--color);
+    cursor: pointer;
 }
