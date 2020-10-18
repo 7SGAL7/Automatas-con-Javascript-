@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Automata Finito Determinante</title>
+</head>
+
+
+<body>
+    <nav class="nav">
+        <h1>AUTOMATA FINITO DETERMINISTA</h1>
+        <div class="formulario">
+            <form name="numeros" id="form">
+                <label>Ingresa la cadena: <input id ="cadena" type="text" name="valores" ></label>
+                <input type="button" value="Recorrer" name="Recorrer" id="Recorrer" onclick="Recorrer">
+            </form>
+        </div>
+    </nav>
+
+    <div class="class">
+        <div class="main">
+            <div class="flechita">
+                <div class="flecha"></div>
+
+            </div>
+            <div class="flechita2">
+                <div class="flecha"></div>
+            </div>
+            <div class="flechita3">
+                <div class="flecha"></div>
+            </div>
+            <div class="flechita4">
+                <div class="flecha"></div>
+            </div>
+            <div class="numero">
+                <p class="one">1</p>
+                <p class="two">1</p>
+                <p class="three">0</p>
+                <p class="four">0</p>
+            </div>
+            <div class="vectores">
+                <div class="vector-largo">
+                    <svg height="30mm" width="100mm">
+        <path fill="transparent" 
+        d="M1 120 Q 100 10,
+        300 130 T 50 1000" 
+        class="path"></path>
+       
+    </svg>
+
+                </div>
+                <div class="vector uno">
+                    <svg height="30mm" width="30mm">
+                    <path fill="transparent" 
+                    d="M10 80 Q 90.5 10,
+                    90 40 T 50 110" 
+                    class="path"></path>
+                </svg>
+                </div>
+            </div>
+
+
+
+            <div class="caja">
+                <div class="elemento">
+                    <div class="aceptacion">
+                        <p>S<sub>1</sub></p>
+                    </div>
+                </div>
+                <div class="elemento">
+
+                    <p>S<sub>2</sub></p>
+                </div>
+            </div>
+
+            <div class="vectores invertidos">
+                <div class="vector abajo">
+                    <svg height="30mm" width="30mm">
+                    <path fill="transparent"
+                    d="M10 80 Q 90.5 10,
+                    90 40 T 50 110 0" 
+                    class="path"></path>
+                </svg>
+                </div>
+                <div class="vector-largo abajo">
+                    <svg height="30mm" width="150mm">
+                        <path fill="transparent" 
+                        d="M1 120 Q 100 10,
+                        300 130 T 50 1000 0" 
+                        class="path"></path>
+                    </svg>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --tam: 100px;
+    --tam-acept: 90px;
+}
+
+.caja {
+    display: flex;
+}
+
+h1 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.class {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.main {
+    position: relative;
+    width: 500px;
+}
+
+.elemento {
+    width: var(--tam);
+    height: var(--tam);
+    background-color: red;
+    position: relative;
+    top: 100px;
+    z-index: 100;
+    border: solid black 2px;
+}
+
+.elemento:first-child {
+    left: 60px
+}
+
+.elemento {
+    left: 250px
+}
+
+.elemento,
+.aceptacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.nav {
+    background-color: blue;
+    width: 100%;
+}
+
+.vector,
+.vector-largo {
+    display: inline-block;
+    position: absolute;
+}
+
+.vector {
+    width: 100px;
+    transform: rotate(-10deg);
+}
+
+.uno {
+    position: absolute;
+    left: 370px;
+    top: 70px;
+}
+
+.vector-largo {
+    width: 300px;
+    left: 120px;
+}
+
+.invertidos .vector-largo {
+    top: 170px;
+}
+
+.invertidos .vector {
+    display: absolute;
+    left: 40px;
+    top: 130px;
+}
+
+.aceptacion {
+    border: 2px black solid;
+    width: var(--tam-acept);
+    height: var(--tam-acept);
+}
+
+.abajo {
+    transform: rotate(180deg);
+}
+
+.elemento:hover {
+    background-color: green;
+}
+
+.numero {
+    position: relative;
+}
+
+.one,
+.two,
+.three,
+.four {
+    position: absolute;
+}
+
+.one {
+    top: 180px;
+    left: 40px
+}
+
+.two {
+    top: 100px;
+    right: 25px
+}
+
+.three {
+    top: 70px;
+    left: 150px
+}
+
+.four {
+    top: 200px;
+    right: 100px
+}
+
+path {
+    stroke: black;
+    stroke-width: 2;
+}
+
+
+/* Se llevan x = 5, y = 2*/
+
+.flechita {
+    top: 92px;
+    left: 135px
+}
+
+.flechita2 {
+    top: 211px;
+    right: 119px;
+    transform: rotate(190deg);
+}
+
+.flechita3 {
+    top: 211px;
+    left: 92px;
+    transform: rotate(180deg);
+}
+
+.flechita4 {
+    right: 72px;
+    top: 94px
+}
+
+.flechita,
+.flechita2,
+.flechita3,
+.flechita4 {
+    position: absolute;
+}
+
+.flecha::after,
+.flecha::before {
+    content: "";
+    background-color: black;
+    border-radius: 30%;
+    width: 3px;
+    height: 15px;
+    display: block;
+    position: absolute;
+}
+
+.flecha::after {
+    transform: rotate(80deg);
+    top: 5px;
+    left: 5px;
+}
+
+.flecha::before {
+    transform: rotate(10deg);
+    border-radius: 30%;
+    top: 0;
+    left: 0;
+}
+
+.formulario {
+    padding: 10px 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
