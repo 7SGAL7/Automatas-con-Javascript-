@@ -172,10 +172,17 @@ path {
     top: 94px
 }
 
+.flechita5 {
+    top: 160px;
+    left: 50px;
+    transform: rotate(230deg);
+}
+
 .flechita,
 .flechita2,
 .flechita3,
-.flechita4 {
+.flechita4,
+.flechita5 {
     position: absolute;
 }
 
@@ -231,4 +238,11 @@ input[type=button] {
     border: none;
     color: var(--color);
     cursor: pointer;
+}
+
+.inicio {
+    top: 150px;
+    left: 0;
+    stroke: black;
+    stroke-width: 2;
 }
